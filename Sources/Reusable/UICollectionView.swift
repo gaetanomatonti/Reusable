@@ -3,7 +3,7 @@ import UIKit
 
 extension UICollectionReusableView: Reusable {}
 
-extension UICollectionView {
+public extension UICollectionView {
   func register(cell: UICollectionViewCell.Type) {
     register(cell, forCellWithReuseIdentifier: cell.reuseIdentifier)
   }
@@ -59,7 +59,5 @@ extension UICollectionView {
     
     return footer
   }
-
 }
-
 #endif

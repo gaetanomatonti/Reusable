@@ -5,7 +5,7 @@ extension UITableViewCell: Reusable {}
 
 extension UITableViewHeaderFooterView: Reusable {}
 
-extension UITableView {
+public extension UITableView {
   func register(_ cell: UITableViewCell.Type) {
     register(cell, forCellReuseIdentifier: cell.reuseIdentifier)
   }
